@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface HistoricalEraRepository extends JpaRepository<HistoricalEra, Long> {
-    // Tüm standart CRUD (Create, Read, Update, Delete) işlemleri JpaRepository'den gelir.
 }
