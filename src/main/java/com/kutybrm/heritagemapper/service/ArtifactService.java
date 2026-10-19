@@ -21,7 +21,6 @@ public class ArtifactService {
         return artifactRepository.save(artifact);
     }
 
-    // Sadece topluluk tarafından onaylanmış eserleri getiren özel servis metodu
     public List<Artifact> getVerifiedArtifacts() {
         return artifactRepository.findByVerifiedTrue();
     }
