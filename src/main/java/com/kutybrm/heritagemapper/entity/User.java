@@ -9,13 +9,13 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "users")
-@Data // Lombok: Getter, Setter ve toString metodlarını otomatik yazar
-@NoArgsConstructor // Parametresiz constructor oluşturur
-@AllArgsConstructor // Tüm parametreli constructor'ı oluşturur
+@Data 
+@NoArgsConstructor 
+@AllArgsConstructor
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // SERIAL PRIMARY KEY karşılığı
+    @GeneratedValue(strategy = GenerationType.IDENTITY) 
     private Long id;
 
     @Column(nullable = false, unique = true, length = 50)
