@@ -8,7 +8,6 @@ import java.util.Optional;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-    // Özel sorgu metodları: Spring Boot ismine bakarak SQL'i kendisi yazar!
     Optional<User> findByUsername(String username);
     Optional<User> findByEmail(String email);
 }

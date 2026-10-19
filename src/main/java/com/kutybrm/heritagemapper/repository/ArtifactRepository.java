@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface ArtifactRepository extends JpaRepository<Artifact, Long> {
     List<Artifact> findByLocationId(Long locationId);
-    List<Artifact> findByVerifiedTrue(); // Sadece onaylanmış (verified = true) eserleri getirir
+    List<Artifact> findByVerifiedTrue(); 
 }
