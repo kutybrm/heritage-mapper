@@ -37,7 +37,6 @@ public class Location {
     @Column(columnDefinition = "TEXT")
     private String description;
 
-    // Foreign Key Bağlantısı: created_by kolonu User tablosuna gidiyor
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "created_by")
     private User createdBy;
